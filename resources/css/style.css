@@ -1,0 +1,72 @@
+html  {
+  font-size: 18px;
+}
+
+body  {
+
+}
+
+@media only screen and (max-width: 980px) {
+  html{
+    font-size: 14px;
+  }
+}
+
+/*Header*/
+
+.header {
+  display: flex;
+  height: 64px;
+  padding: 0 24px;
+  background-color: white;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  align-items: center;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+}
+
+#colmar {
+  color: black;
+  font-weight: 600;
+}
+
+#academy  {
+  color: grey;
+}
+
+.menu {
+  display: inline-flex;
+  justify-content: flex-end;
+  width: 50%;
+  align-items: center;
+}
+
+.menu li a {
+  padding-left: 16px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: grey;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 980px) {
+  .header {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .mobile-nav {
+    display: flex;
+    height: 64px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
