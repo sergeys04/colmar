@@ -281,38 +281,153 @@ p {
 
 .program-menu {
   background-color: rgb(220, 220, 220);
+  padding: 32px 0;
 }
 
 .program-menu h1  {
   text-align: center;
-  padding: 32px 0;
+  padding-bottom: 32px;
 }
 
 .programs {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
-  align-content: space-around;
 }
 
 .program  {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  align-content: space-around;
   width: 25%;
   background-color: white;
   margin: 32px 32px;
+  border-radius: 10px;
 }
 
 .program-img  img {
   max-width: 100%;
+  border-radius: 10px;
 }
 
 .program-text {
   padding: 16px 24px;
+}
+
+.program-text h3 {
+  padding: 8px 0;
+}
+
+.mobile-program {
+  display: none;
+  margin: 0 16px 8px 16px;
+  border-radius: 10px;
+}
+
+.mobile-program button  {
+  display: block;
+  padding: 16px 0 16px 16px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: rgb(220, 220, 220);
+  color: rgb(90, 90, 90);
+}
+
+@media only screen and (max-width: 810px) {
+  .mobile-program {
+    display: block;
+  }
+
+  .program  {
+    display: none;
+  }
+
+  .program-menu {
+    background-color: white;
+  }
+
+  .programs {
+    display: block;
+  }
+}
+
+/*Thesis section*/
+
+.thesis {
+  padding: 32px 0;
+}
+
+.thesis h1  {
+  text-align: center;
+  display: block;
+  padding: 24px 0;
+}
+
+.thesis-container {
+  display: flex;
+}
+
+.thesis-video {
+  max-width: 60%;
+  padding: 32px 16px 32px 24px;
+}
+
+.thesis-video video {
+  max-width: 100%;
+}
+
+.thesis .info {
+  border: none;
+}
+
+@media only screen and (max-width: 810px) {
+  .thesis .info {
+    display: none;
+  }
+
+  .thesis-video h1,
+  .thesis-video p {
+    display: none;
+  }
+
+  .thesis-video {
+    max-width: 100%;
+    padding: 8px 0 24px 0;
+  }
+}
+
+footer {
+  padding: 24px 0 0 24px;
+  border-top: 2px solid rgb(220, 220, 220);
+  display: flex;
+  justify-content: space-between;
+}
+
+footer ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul li a  {
+  padding: 0 1rem;
+  text-decoration: none;
+  color: rgb(90, 90, 90);
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 810px) {
+  footer ul {
+    display: none;
+  }
+
+  footer {
+    padding-top: 16px;
+    border: none;
+  }
+
+  footer p {
+    width: 100%;
+  }
 }
